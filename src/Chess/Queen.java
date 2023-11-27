@@ -25,7 +25,6 @@ public class Queen extends ChessPiece{
 			int start = (toLine - line != 0) ? line + direction : column + direction;
 			int end = (toLine - line != 0) ? toLine : toColumn;
 
-
 			//проходимся по намеченному пути ладьи и проверяем что нет фигур.
 			while (start != end) {
 				if (toLine - line != 0 && chessBoard.board[start][column] != null) {
